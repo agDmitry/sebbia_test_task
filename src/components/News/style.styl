@@ -1,0 +1,21 @@
+.News {
+  .Panel__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  &__list {
+    padding: $theme.spacings.md;
+    overflow: auto;
+    flex: 1;
+
+    &>*:not( :last-child ) {
+      margin-bottom: $theme.spacings.md;
+    }
+  }
+
+  &__footer {
+    box-shadow: 0px -1px 2px 0px $theme.colors.grey['700'];
+  }
+}
